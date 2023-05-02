@@ -1,0 +1,8 @@
+mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.One), sprites.create(assets.image`stick man`, SpriteKind.Player))
+mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two), sprites.create(assets.image`Orange`, SpriteKind.Player))
+let mySprite = mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One))
+let mySprite2 = mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two))
+mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.One))
+mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Two))
+mySprite.setStayInScreen(true)
+mySprite2.setStayInScreen(true)
